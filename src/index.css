@@ -646,6 +646,11 @@ body ::selection {
     ),
     url('/src/img/home-bg.jpg') no-repeat fixed center center/cover;
 }
+@media only screen and (max-width: 61.9375em) {
+  .home {
+    background-attachment: scroll;
+  }
+}
 @supports (
   (-webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0)) or
     (clip-path: polygon(0 0, 0 0, 0 0, 0 0))
@@ -811,6 +816,11 @@ body ::selection {
       rgba(20, 20, 20, 0.4)
     ),
     url('/src/img/skills-bg.jpg') no-repeat fixed center center/cover;
+}
+@media only screen and (max-width: 61.9375em) {
+  .skills {
+    background-attachment: scroll;
+  }
 }
 .skills__container {
   padding: 0 15rem;

@@ -235,6 +235,10 @@ body {
     transform: translateX(-50%);
     border-radius: 50%;
   }
+
+  @include responsive(medium) {
+    background-attachment: scroll;
+  }
 }
 
 ////////////////////////////////////////
@@ -340,6 +344,10 @@ body {
       padding: 1rem 1.9rem;
       border-radius: 0.5rem;
     }
+  }
+
+  @include responsive(medium) {
+    background-attachment: scroll;
   }
 }
 
