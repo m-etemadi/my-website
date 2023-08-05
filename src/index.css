@@ -686,7 +686,7 @@ body ::selection {
 .home .btn__secondary {
   position: absolute;
   left: 50%;
-  bottom: 12vh;
+  bottom: 15vh;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   border-radius: 50%;
