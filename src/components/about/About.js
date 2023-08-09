@@ -7,7 +7,7 @@ export default function About({ children }) {
       <div className="container">
         <div className="about__container">
           <figure className="about__photo">
-            <img src={about} alt="Mohammad Etemadi" />
+            <img src={about} alt="Mohammad Etemadi" loading="lazy" />
           </figure>
 
           <article className="about__content">{children}</article>

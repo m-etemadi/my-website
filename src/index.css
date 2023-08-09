@@ -454,9 +454,14 @@ body ::selection {
   top: 8rem;
   right: -50%;
   z-index: 20;
-  background-color: rgba(20, 20, 20, 0.9);
+  background-color: rgba(20, 20, 20, 0.97);
   -webkit-animation: navOpen 0.3s;
   animation: navOpen 0.3s;
+}
+@media only screen and (max-width: 61.9375em) {
+  .mobile__nav {
+    display: block;
+  }
 }
 .mobile__nav.open {
   right: 0;
@@ -472,11 +477,6 @@ body ::selection {
   }
   100% {
     right: 0;
-  }
-}
-@media only screen and (max-width: 61.9375em) {
-  .mobile__nav {
-    display: block;
   }
 }
 .header {
