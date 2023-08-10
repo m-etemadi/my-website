@@ -11,7 +11,7 @@ This is my personal portfolio website built using HTML5, CSS3, and ReactJS. It s
 
 ## Demo
 
-You can try out a live demo of the application [here](https://m-etemadi.ir/).
+You can try out a live demo of the application [here](https://m-etemadi.me/).
 
 ## Technologies Used
 
