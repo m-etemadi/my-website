@@ -2,26 +2,26 @@ import { useState } from 'react';
 
 export default function ContactForm() {
   const [error, setError] = useState('');
+  const URL = 'https://getform.io/f/a485288e-41eb-4d93-88e9-afbbc5c35de3';
 
   async function handleSubmit(e) {
     e.preventDefault();
 
     try {
       const formData = new FormData(e.target);
-      const res = await fetch(
-        'https://getform.io/f/a485288e-41eb-4d93-88e9-afbbc5c35de3',
-        {
-          method: 'POST',
-          body: formData,
-          headers: {
-            Accept: 'application/json',
-          },
-        }
-      );
+      const res = await fetch(URL, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
       if (!res.ok) throw new Error('Something went wrong!');
       const data = await res.json();
 
-      if (data.success) setError('Message sent!');
+      if (data.success) {
+        setError('Message sent!');
+      }
     } catch (err) {
       setError(err.message);
     }
@@ -73,7 +73,7 @@ export default function ContactForm() {
           Send Message
         </button>
       </div>
-      <div className="form__group">{error}</div>
+      {error && <div className="form__group">{error}</div>}
     </form>
   );
 }

@@ -43,7 +43,12 @@ export default function AboutSocials() {
           <SocialLink link={link} key={link.title} />
         ))}
       </div>
-      <a href="#" className="btn__primary" title="Download C.V">
+      <a
+        href="resume/Mohammad_Etemadi_Resume.pdf"
+        className="btn__primary"
+        title="Download C.V"
+        target="_blank"
+      >
         Download C.V
       </a>
     </div>

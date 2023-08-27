@@ -26,33 +26,29 @@ export default function App() {
     setIsOpen(o => !o);
   }
 
+  if (isLoading) return <Loader />;
+
   return (
-    <div>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          {isOpen && <MobileNav className={isOpen ? 'open' : ''} />}
-          <Header>
-            <Logo />
-            <Hamburger onMobileNavOpen={handleMobileNavOpen} />
-            <Navbar />
-          </Header>
-          <Home>
-            <HomeTitle />
-          </Home>
-          <About>
-            <AboutText />
-            <AboutSocials />
-          </About>
-          <Skills />
-          <Contact>
-            <ContactForm />
-            <ContactInfo />
-          </Contact>
-          <Footer />
-        </>
-      )}
-    </div>
+    <>
+      {isOpen && <MobileNav className={isOpen ? 'open' : ''} />}
+      <Header>
+        <Logo />
+        <Hamburger onMobileNavOpen={handleMobileNavOpen} />
+        <Navbar />
+      </Header>
+      <Home>
+        <HomeTitle />
+      </Home>
+      <About>
+        <AboutText />
+        <AboutSocials />
+      </About>
+      <Skills />
+      <Contact>
+        <ContactForm />
+        <ContactInfo />
+      </Contact>
+      <Footer />
+    </>
   );
 }
