@@ -8,7 +8,6 @@ const skills = [
   'React',
   'Redux',
   'Next',
-  'RESTful API',
   'SASS',
   'Tailwind CSS',
   'Bootstrap',
