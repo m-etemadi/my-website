@@ -7,7 +7,7 @@ const skills = [
   'JavaScript',
   'React',
   'Redux',
-  'Next',
+  // 'Next',
   'SASS',
   'Tailwind CSS',
   'Bootstrap',
